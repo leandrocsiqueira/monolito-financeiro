@@ -2,25 +2,27 @@ unit MonolitoFinanceiro.View.FormPrincipal;
 
 interface
 
-  uses Winapi.Windows,
-       Winapi.Messages,
-       System.SysUtils,
-       System.Variants,
-       System.Classes,
-       Vcl.Graphics,
-       Vcl.Controls,
-       Vcl.Forms,
-       Vcl.Dialogs,
-       Vcl.Menus;
+  uses
+    Winapi.Windows,
+    Winapi.Messages,
+    System.SysUtils,
+    System.Variants,
+    System.Classes,
+    Vcl.Graphics,
+    Vcl.Controls,
+    Vcl.Forms,
+    Vcl.Dialogs,
+    Vcl.Menus;
 
-  type TFrmPrincipal = class(TForm)
-         MmOperacoes:      TMainMenu;
-         MiCadastros:      TMenuItem;
-         MiRelatorios:     TMenuItem;
-         MiAjuda:          TMenuItem;
-         MiCadastroPadrao: TMenuItem;
-         procedure MiCadastroPadraoClick(Sender: TObject);
-         procedure FormCreate(Sender: TObject);
+  type
+    TFrmPrincipal = class(TForm)
+      MmOperacoes:      TMainMenu;
+      MiCadastros:      TMenuItem;
+      MiRelatorios:     TMenuItem;
+      MiAjuda:          TMenuItem;
+      MiCadastroPadrao: TMenuItem;
+      procedure MiCadastroPadraoClick(Sender: TObject);
+      procedure FormCreate(Sender: TObject);
   end;
 
   var FrmPrincipal: TFrmPrincipal;
@@ -30,7 +32,6 @@ implementation
   uses
     MonolitoFinanceiro.View.FormCadastroPadrao,
     MonolitoFinanceiro.View.FormSplash;
-
 
   {$R *.dfm}
 

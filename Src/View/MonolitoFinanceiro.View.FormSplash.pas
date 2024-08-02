@@ -48,7 +48,7 @@ implementation
     AImagem.Visible := True;
   end;
 
-procedure TFrmSplash.TmrTemporarizadorTimer(Sender: TObject);
+  procedure TFrmSplash.TmrTemporarizadorTimer(Sender: TObject);
   begin
     if ProgBarCarregamento.Position < 100 then
     begin

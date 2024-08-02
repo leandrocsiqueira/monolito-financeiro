@@ -157,7 +157,6 @@ object FrmPadraoCadastro: TFrmPadraoCadastro
           Images = ImgListaIcones
           TabOrder = 2
           OnClick = BtnEditarClick
-          ExplicitHeight = 100
         end
         object BtnExcluir: TButton
           Left = 213
