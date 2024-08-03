@@ -1,3 +1,11 @@
+{*******************************************************}
+{                                                       }
+{       Borland Delphi Visual Component Library         }
+{       Copyright (c) 1995,99 Borland International     }
+{       Created by Project JEDI                         }
+{                                                       }
+{*******************************************************}
+
 unit MonolitoFinanceiro.View.FormCadastroPadrao;
 
 interface
@@ -22,30 +30,31 @@ interface
     Vcl.ImgList;
 
   type
-    TFrmPadraoCadastro = class(TForm)
-      CPnlPrincipal:       TCardPanel;
-      CCadastro:           TCard;
-      CPesquisa:           TCard;
-      PnlPesquisaTopo:     TPanel;
-      PnlPesquisaRodape:   TPanel;
-      PnlPesquisaCentral:  TPanel;
-      PnlCadastroRodape:   TPanel;
-      DgdDadosCadastrados: TDBGrid;
-      EdtPesquisa:         TEdit;
-      LblPesquisar:        TLabel;
-      ImgListaIcones:      TImageList;
-      BtnPesquisar:        TButton;
-      BtnFechar:           TButton;
-      BtnIncluir:          TButton;
-      BtnEditar:           TButton;
-      BtnExcluir:          TButton;
-      BtnImprimir:         TButton;
-      BtnCancelar:         TButton;
-      BtnSalvar:           TButton;
-      procedure BtnIncluirClick(Sender: TObject);
-      procedure BtnEditarClick(Sender: TObject);
-      procedure BtnFecharClick(Sender: TObject);
-      procedure BtnCancelarClick(Sender: TObject);
+    TFrmPadraoCadastro = class( TForm )
+      CPnlPrincipal: TCardPanel;
+      CCadastro: TCard;
+      CPesquisa: TCard;
+      PnlPesquisaTopo: TPanel;
+      PnlPesquisaRodape: TPanel;
+      PnlPesquisaCentral: TPanel;
+      PnlCadastroRodape: TPanel;
+      DgDados: TDBGrid;
+      EdtPesquisa: TEdit;
+      LblPesquisar: TLabel;
+      ImgListaIcones: TImageList;
+      BtnPesquisar: TButton;
+      BtnFechar: TButton;
+      BtnIncluir: TButton;
+      BtnEditar: TButton;
+      BtnExcluir: TButton;
+      BtnImprimir: TButton;
+      BtnCancelar: TButton;
+      BtnSalvar: TButton;
+      DsPadrao: TDataSource;
+      procedure BtnIncluirClick( Sender: TObject );
+      procedure BtnEditarClick( Sender: TObject );
+      procedure BtnFecharClick( Sender: TObject );
+      procedure BtnCancelarClick( Sender: TObject );
     end;
 
   var
@@ -55,22 +64,22 @@ implementation
 
   {$R *.dfm}
 
-  procedure TFrmPadraoCadastro.BtnCancelarClick(Sender: TObject);
+  procedure TFrmPadraoCadastro.BtnCancelarClick( Sender: TObject );
   begin
     CPnlPrincipal.ActiveCard := CPesquisa;
   end;
 
-  procedure TFrmPadraoCadastro.BtnEditarClick(Sender: TObject);
+  procedure TFrmPadraoCadastro.BtnEditarClick( Sender: TObject );
   begin
     CPnlPrincipal.ActiveCard := CCadastro;
   end;
 
-  procedure TFrmPadraoCadastro.BtnFecharClick(Sender: TObject);
+  procedure TFrmPadraoCadastro.BtnFecharClick( Sender: TObject );
   begin
     Close;
   end;
 
-  procedure TFrmPadraoCadastro.BtnIncluirClick(Sender: TObject);
+  procedure TFrmPadraoCadastro.BtnIncluirClick( Sender: TObject );
   begin
     CPnlPrincipal.ActiveCard := CCadastro;
   end;

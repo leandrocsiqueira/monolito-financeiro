@@ -192,7 +192,7 @@ object FrmPadraoCadastro: TFrmPadraoCadastro
         Height = 511
         Align = alClient
         TabOrder = 2
-        object DgdDadosCadastrados: TDBGrid
+        object DgDados: TDBGrid
           Left = 1
           Top = 1
           Width = 1092
@@ -1806,5 +1806,9 @@ object FrmPadraoCadastro: TFrmPadraoCadastro
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000
       000000000000}
+  end
+  object DsPadrao: TDataSource
+    Left = 912
+    Top = 472
   end
 end

@@ -102,18 +102,11 @@
         <DelphiCompile Include="$(MainSource)">
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
-        <DCCReference Include="Src\View\MonolitoFinanceiro.View.FormPrincipal.pas">
-            <Form>FrmPrincipal</Form>
-            <FormType>dfm</FormType>
-        </DCCReference>
-        <DCCReference Include="Src\View\MonolitoFinanceiro.View.FormCadastroPadrao.pas">
-            <Form>FrmPadraoCadastro</Form>
-            <FormType>dfm</FormType>
-        </DCCReference>
-        <DCCReference Include="Src\View\MonolitoFinanceiro.View.FormSplash.pas">
-            <Form>FrmSplash</Form>
-            <FormType>dfm</FormType>
-        </DCCReference>
+        <DCCReference Include="Src\View\MonolitoFinanceiro.View.FormPrincipal.pas"/>
+        <DCCReference Include="Src\View\MonolitoFinanceiro.View.FormCadastroPadrao.pas"/>
+        <DCCReference Include="Src\View\MonolitoFinanceiro.View.FormSplash.pas"/>
+        <DCCReference Include="Src\Model\MonolitoFinanceiro.Model.DmConexao.pas"/>
+        <DCCReference Include="Src\View\MonolitoFinanceiro.View.FormGerenciamentoUsuarios.pas"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
